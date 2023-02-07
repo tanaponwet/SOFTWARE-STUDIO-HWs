@@ -1,0 +1,2284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <style>
+        .magazine-con {
+            padding: 127px 0 128px;
+        }
+
+        .logo-font-1 {
+            font-family: 'DM Serif Display', serif;
+            font-style: italic;
+            font-size: 1.5rem;
+        }
+
+        .logo-font-2 {
+            font-family: 'DM Serif Display', serif;
+            font-style: italic;
+            font-size: 2.25rem;
+        }
+
+        .header-bg {
+            height: 70vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .title {
+            font-family: 'Chonburi', cursive;
+        }
+
+        .title-bg {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000000 100%);
+            backdrop-filter: blur(10px);
+        }
+
+        .paragraph {
+            text-indent: 4rem;
+            font-family: 'Noto Sans Thai', sans-serif;
+        }
+
+        .quote-font {
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .magazine-con {
+                padding: 71px 0 72px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="position-fixed w-100" style="z-index: 10;">
+        <div class="d-none d-md-flex justify-content-center pt-3 bg-light">
+            <div class="d-flex align-items-start">
+                <span class="logo-font-1">One</span>
+                <span class="logo-font-2">MAGAZINE</span>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom">
+            <div class="container">
+                <div class="d-flex flex-row align-items-start d-md-none">
+                    <span class="logo-font-1">One</span>
+                    <span class="logo-font-2">MAGAZINE</span>
+                </div>
+                <button class="navbar-toggler border-0 ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                        <li class="navbar-item mx-1 my-1 my-md-0">
+                            <a href="#story1" class="nav-link">Story#1</a>
+                        </li>
+                        <li class="navbar-item mx-1 my-1 my-md-0">
+                            <a href="#story2" class="nav-link">Story#2</a>
+                        </li>
+                        <li class="navbar-item mx-1 my-1 my-md-0">
+                            <a href="#story3" class="nav-link">Story#3</a>
+                        </li>
+                        <li class="navbar-item mx-1 my-1 my-md-0">
+                            <a href="#story4" class="nav-link">Story#4</a>
+                        </li>
+                        <li class="navbar-item mx-1 my-1 my-md-0">
+                            <a href="#story5" class="nav-link">Story#5</a>
+                        </li>
+                        <li class="navbar-item mx-1 my-1 my-md-0">
+                            <a href="#story6" class="nav-link">Story#6</a>
+                        </li>
+                        <li class="navbar-item mx-1 my-1 my-md-0">
+                            <a href="#story7" class="nav-link">Story#7</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="magazine-con bg-light">
+        <div id="story1">
+            <header class="header-bg d-flex align-items-end"
+                style="background-image: url(https://images.unsplash.com/photo-1544181092-2ca1226466e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);">
+                <div class="title-bg w-100">
+                    <div class="container mx-auto text-light" style="max-width: 960px;">
+                        <p class="title fs-1">Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Suscipit, rem.</p>
+                        <hr>
+                        <p class="fw-bold text-primary">Category</p>
+                        <p class="fw-bold fst-italic">Feb 31, 2023</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container mt-4 mb-0 d-flex flex-column align-items-center" style="max-width: 960px;">
+                <div class="w-100">
+                    <div>
+                        <figure style="aspect-ratio: 16 / 9; overflow: hidden;">
+                            <img style="width: 100%;"
+                                src="https://images.unsplash.com/photo-1542672885-712ddc121c22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                                alt="">
+                        </figure>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolores rem quia ea et
+                        voluptatibus
+                        explicabo eos soluta alias in ipsam, harum sint corrupti sequi nostrum eligendi animi unde est
+                        cum
+                        labore odio blanditiis. Ut ab provident dolorum veniam corporis iusto hic explicabo numquam
+                        quidem,
+                        deserunt dolore quisquam? Dolores aperiam commodi repellendus molestiae dolore voluptatum,
+                        explicabo
+                        ullam accusamus facilis natus ducimus magnam ipsa deleniti voluptate odit quasi vero accusantium
+                        sint impedit laudantium. Voluptas numquam, eos laudantium harum veritatis tempore obcaecati
+                        adipisci
+                        officia, magni et itaque saepe, eum sint impedit odit deleniti ipsa! Delectus aperiam sunt aut
+                        asperiores repellat beatae perferendis?
+                    </p>
+
+                    <div class="d-flex flex-column align-items-end">
+                        <p class="quote-font fs-1 fw-bold fst-italic text-primary text-center">
+                            “Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolor!”
+                        </p>
+                        <p class="quote-font fs-4 fw-bold fst-italic text-primary text-center me-5">— Lorem, ipsum.</p>
+                    </div>
+
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime doloremque culpa, deserunt
+                        debitis
+                        excepturi recusandae similique rerum porro. Sapiente recusandae, exercitationem veritatis
+                        dolorem
+                        porro
+                        amet
+                        neque et consequuntur soluta ratione adipisci pariatur ex cum, magnam id, dicta libero? Earum
+                        soluta
+                        voluptas natus suscipit animi voluptatum iusto reiciendis odio qui obcaecati sint, optio
+                        temporibus
+                        minus
+                        nobis eos nihil magni eius veritatis molestiae iste doloribus recusandae! Voluptatum consequatur
+                        ex
+                        vero!
+                        Odit, quis dicta quam ab cumque saepe suscipit, quo quas ullam fugiat, libero porro ducimus enim
+                        doloribus
+                        tempore facilis eveniet. Nesciunt, minus beatae? Consequatur a error sit eaque hic dolorem
+                        eligendi
+                        amet.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="col-12 col-md-6 float-none float-md-start me-0 me-md-4">
+                            <figure style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1586768045025-f7cacc295831?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1013&q=80"
+                                    alt="">
+                            </figure>
+                            <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                        </div>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipisicing elit. Adipisci ipsum error odio autem mollitia natus ex
+                        facere
+                        excepturi eum dolorem, obcaecati cum sapiente quasi nesciunt eveniet! Delectus explicabo sint id
+                        cumque,
+                        quia repellendus rerum, nihil error vero non voluptatibus impedit esse nostrum? Ullam, fuga?
+                        Impedit
+                        nostrum
+                        quaerat excepturi quas error in ipsum natus suscipit totam esse earum adipisci fuga rerum
+                        dolorum,
+                        quis
+                        perspiciatis ducimus asperiores tenetur enim, atque temporibus animi magni saepe! Asperiores
+                        repellat,
+                        laudantium illo eos cum veniam quasi. Quasi aut maxime sed nostrum dolor! Neque quo quis odit
+                        sint
+                        eligendi.
+                        Eum eveniet asperiores, similique incidunt nisi dolorum magnam nobis quas sequi vel perferendis
+                        minus
+                        cumque. Sint rerum mollitia nulla debitis alias quasi, dolore sunt velit ut cupiditate cum
+                        magnam
+                        laudantium, dignissimos doloribus, modi quibusdam consectetur. Ea quisquam porro fugiat sed
+                        debitis
+                        laudantium temporibus rerum reiciendis sapiente sint quae provident voluptas necessitatibus
+                        omnis
+                        eos et
+                        incidunt molestiae corrupti ullam aliquid, velit dolorem suscipit. Sunt sint accusamus sit
+                        suscipit
+                        exercitationem, magnam maxime dignissimos quisquam numquam quaerat fugit, doloribus officia!
+                        Amet
+                        deserunt,
+                        saepe reprehenderit quam commodi ut nam, dignissimos ipsa blanditiis accusantium voluptatibus.
+                        Nulla
+                        repellendus est ea esse, doloremque fugit numquam nisi ut eveniet facilis reprehenderit quos
+                        neque
+                        quae
+                        recusandae provident.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="row gx-0">
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1608336838021-57718556979d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1504579264001-833438f93df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1611477440608-4148806fe523?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%"
+                                    src="https://images.unsplash.com/photo-1511614617807-b46c9354bd18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1165&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe sed officia ab repudiandae
+                        recusandae consequuntur, earum nemo velit voluptatum quo dolore praesentium nostrum ut possimus
+                        voluptates totam omnis pariatur commodi sit iusto dolor cupiditate itaque sunt. Illum maxime
+                        similique fugiat ullam fuga voluptatibus ipsa quisquam, repellendus consequatur et, saepe
+                        deserunt.
+                        Necessitatibus enim impedit quidem distinctio quae? Maxime recusandae blanditiis, voluptates
+                        cupiditate id eaque quasi quos molestias modi mollitia accusantium a velit. Eos repellendus illo
+                        praesentium quia deserunt, architecto recusandae error numquam dolor illum necessitatibus vel
+                        porro
+                        ullam expedita possimus voluptates reprehenderit nesciunt quisquam quos debitis veritatis?
+                        Ipsum, ea
+                        eaque?
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="col-12 col-md-6 float-none float-md-end ms-0 ms-md-4">
+                            <figure style="aspect-ratio: 1 / 2; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1616902509409-a624c4f31a56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=566&q=80"
+                                    alt="">
+                            </figure>
+                            <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                        </div>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipisicing elit. Adipisci ipsum error odio autem mollitia natus ex
+                        facere
+                        excepturi eum dolorem, obcaecati cum sapiente quasi nesciunt eveniet! Delectus explicabo sint id
+                        cumque,
+                        quia repellendus rerum, nihil error vero non voluptatibus impedit esse nostrum? Ullam, fuga?
+                        Impedit
+                        nostrum
+                        quaerat excepturi quas error in ipsum natus suscipit totam esse earum adipisci fuga rerum
+                        dolorum,
+                        quis
+                        perspiciatis ducimus asperiores tenetur enim, atque temporibus animi magni saepe! Asperiores
+                        repellat,
+                        laudantium illo eos cum veniam quasi. Quasi aut maxime sed nostrum dolor! Neque quo quis odit
+                        sint
+                        eligendi.
+                        Eum eveniet asperiores, similique incidunt nisi dolorum magnam nobis quas sequi vel perferendis
+                        minus
+                        cumque. Sint rerum mollitia nulla debitis alias quasi, dolore sunt velit ut cupiditate cum
+                        magnam
+                        laudantium, dignissimos doloribus, modi quibusdam consectetur. Ea quisquam porro fugiat sed
+                        debitis
+                        laudantium temporibus rerum reiciendis sapiente sint quae provident voluptas necessitatibus
+                        omnis
+                        eos et
+                        incidunt molestiae corrupti ullam aliquid, velit dolorem suscipit. Sunt sint accusamus sit
+                        suscipit
+                        exercitationem, magnam maxime dignissimos quisquam numquam quaerat fugit, doloribus officia!
+                        Amet
+                        deserunt,
+                        saepe reprehenderit quam commodi ut nam, dignissimos ipsa blanditiis accusantium voluptatibus.
+                        Nulla
+                        repellendus est ea esse, doloremque fugit numquam nisi ut eveniet facilis reprehenderit quos
+                        neque
+                        quae
+                        recusandae provident.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="row gx-0">
+                            <figure class="col-12 col-sm-6 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1572814895138-9a1501883636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1546453159-9301aca09902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe sed officia ab repudiandae
+                        recusandae consequuntur, earum nemo velit voluptatum quo dolore praesentium nostrum ut possimus
+                        voluptates totam omnis pariatur commodi sit iusto dolor cupiditate itaque sunt. Illum maxime
+                        similique fugiat ullam fuga voluptatibus ipsa quisquam, repellendus consequatur et, saepe
+                        deserunt.
+                        Necessitatibus enim impedit quidem distinctio quae? Maxime recusandae blanditiis, voluptates
+                        cupiditate id eaque quasi quos molestias modi mollitia accusantium a velit. Eos repellendus illo
+                        praesentium quia deserunt, architecto recusandae error numquam dolor illum necessitatibus vel
+                        porro
+                        ullam expedita possimus voluptates reprehenderit nesciunt quisquam quos debitis veritatis?
+                        Ipsum, ea
+                        eaque?
+                    </p>
+                </div>
+
+                <div class="row mx-2 mx-md-4 w-100">
+                    <div class="col-12 col-md-6 py-4 border-bottom">
+                        <p class="fs-4 fw-bold text-decoration-underline my-3">AUTHOR</p>
+                        <div class="d-flex align-items-center">
+                            <figure class="m-0 rounded-circle"
+                                style="width: 144px; aspect-ratio: 1 / 1; overflow: hidden;">
+                                <img class="w-100"
+                                    src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t31.18172-8/210330_163856077004351_3078542_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJOSDB04-UzFzPNnwMTgHQuyZ7H0WHAr-7JnsfRYcCv9EFh0scVnD6qVrEAXY9bZQlumIj2Qr0ddycJFU7XbwZ&_nc_ohc=-GxPNzL2aU0AX_zLEYW&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfAtBvWybzNw8LOxMGoAqcwvBHW8GYa-RDOxYznaphxPnA&oe=64081548"
+                                    alt="">
+                            </figure>
+                            <div class="mx-4">
+                                <p class="fs-5 fw-bold m-0">Tanapon Wetsutthanon</p>
+                                <p class="fs-6 m-0">(Boon)</p>
+                                <p class="fs-6 m-0">ID 62010358</p>
+                                <p class="fs-6 fst-italic text-primary m-0 ">Feb 31, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 py-4 border-bottom">
+                        <p class="fs-4 fw-bold text-decoration-underline my-3">PHOTOGRAPHER</p>
+                        <div class="d-flex align-items-center">
+                            <figure class="m-0 rounded-circle"
+                                style="width: 144px; aspect-ratio: 1 / 1; overflow: hidden;">
+                                <img class="w-100"
+                                    src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t31.18172-8/210330_163856077004351_3078542_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJOSDB04-UzFzPNnwMTgHQuyZ7H0WHAr-7JnsfRYcCv9EFh0scVnD6qVrEAXY9bZQlumIj2Qr0ddycJFU7XbwZ&_nc_ohc=-GxPNzL2aU0AX_zLEYW&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfAtBvWybzNw8LOxMGoAqcwvBHW8GYa-RDOxYznaphxPnA&oe=64081548"
+                                    alt="">
+                            </figure>
+                            <div class="mx-4">
+                                <p class="fs-5 fw-bold m-0">Tanapon Wetsutthanon</p>
+                                <p class="fs-6 m-0">(Boon)</p>
+                                <p class="fs-6 m-0">ID 62010358</p>
+                                <p class="fs-6 fst-italic text-primary m-0 ">Feb 31, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#story1" class="text-decoration-none">
+                    <button type="button"
+                        class="btn btn-primary mx-auto my-5 d-flex justify-content-center rounded-pill">
+                        <span class="material-symbols-outlined me-2">
+                            arrow_upward
+                        </span>
+                        Back to top.
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div id="story2">
+            <header class="header-bg d-flex align-items-end"
+                style="background-image: url(https://images.unsplash.com/photo-1544181092-2ca1226466e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);">
+                <div class="title-bg w-100">
+                    <div class="container mx-auto text-light" style="max-width: 960px;">
+                        <p class="title fs-1">Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Suscipit, rem.</p>
+                        <hr>
+                        <p class="fw-bold text-primary">Category</p>
+                        <p class="fw-bold fst-italic">Feb 31, 2023</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container mt-4 mb-0 d-flex flex-column align-items-center" style="max-width: 960px;">
+                <div class="w-100">
+                    <div>
+                        <figure style="aspect-ratio: 16 / 9; overflow: hidden;">
+                            <img style="width: 100%;"
+                                src="https://images.unsplash.com/photo-1542672885-712ddc121c22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                                alt="">
+                        </figure>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolores rem quia ea et
+                        voluptatibus
+                        explicabo eos soluta alias in ipsam, harum sint corrupti sequi nostrum eligendi animi unde est
+                        cum
+                        labore odio blanditiis. Ut ab provident dolorum veniam corporis iusto hic explicabo numquam
+                        quidem,
+                        deserunt dolore quisquam? Dolores aperiam commodi repellendus molestiae dolore voluptatum,
+                        explicabo
+                        ullam accusamus facilis natus ducimus magnam ipsa deleniti voluptate odit quasi vero accusantium
+                        sint impedit laudantium. Voluptas numquam, eos laudantium harum veritatis tempore obcaecati
+                        adipisci
+                        officia, magni et itaque saepe, eum sint impedit odit deleniti ipsa! Delectus aperiam sunt aut
+                        asperiores repellat beatae perferendis?
+                    </p>
+                    <p class="fs-1 fw-bold fst-italic text-primary text-center"
+                        style="font-family: 'Sarabun', sans-serif;">
+                        “Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolor!”</p>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime doloremque culpa, deserunt
+                        debitis
+                        excepturi recusandae similique rerum porro. Sapiente recusandae, exercitationem veritatis
+                        dolorem
+                        porro
+                        amet
+                        neque et consequuntur soluta ratione adipisci pariatur ex cum, magnam id, dicta libero? Earum
+                        soluta
+                        voluptas natus suscipit animi voluptatum iusto reiciendis odio qui obcaecati sint, optio
+                        temporibus
+                        minus
+                        nobis eos nihil magni eius veritatis molestiae iste doloribus recusandae! Voluptatum consequatur
+                        ex
+                        vero!
+                        Odit, quis dicta quam ab cumque saepe suscipit, quo quas ullam fugiat, libero porro ducimus enim
+                        doloribus
+                        tempore facilis eveniet. Nesciunt, minus beatae? Consequatur a error sit eaque hic dolorem
+                        eligendi
+                        amet.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="col-12 col-md-6 float-none float-md-start me-0 me-md-4">
+                            <figure style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1586768045025-f7cacc295831?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1013&q=80"
+                                    alt="">
+                            </figure>
+                            <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                        </div>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipisicing elit. Adipisci ipsum error odio autem mollitia natus ex
+                        facere
+                        excepturi eum dolorem, obcaecati cum sapiente quasi nesciunt eveniet! Delectus explicabo sint id
+                        cumque,
+                        quia repellendus rerum, nihil error vero non voluptatibus impedit esse nostrum? Ullam, fuga?
+                        Impedit
+                        nostrum
+                        quaerat excepturi quas error in ipsum natus suscipit totam esse earum adipisci fuga rerum
+                        dolorum,
+                        quis
+                        perspiciatis ducimus asperiores tenetur enim, atque temporibus animi magni saepe! Asperiores
+                        repellat,
+                        laudantium illo eos cum veniam quasi. Quasi aut maxime sed nostrum dolor! Neque quo quis odit
+                        sint
+                        eligendi.
+                        Eum eveniet asperiores, similique incidunt nisi dolorum magnam nobis quas sequi vel perferendis
+                        minus
+                        cumque. Sint rerum mollitia nulla debitis alias quasi, dolore sunt velit ut cupiditate cum
+                        magnam
+                        laudantium, dignissimos doloribus, modi quibusdam consectetur. Ea quisquam porro fugiat sed
+                        debitis
+                        laudantium temporibus rerum reiciendis sapiente sint quae provident voluptas necessitatibus
+                        omnis
+                        eos et
+                        incidunt molestiae corrupti ullam aliquid, velit dolorem suscipit. Sunt sint accusamus sit
+                        suscipit
+                        exercitationem, magnam maxime dignissimos quisquam numquam quaerat fugit, doloribus officia!
+                        Amet
+                        deserunt,
+                        saepe reprehenderit quam commodi ut nam, dignissimos ipsa blanditiis accusantium voluptatibus.
+                        Nulla
+                        repellendus est ea esse, doloremque fugit numquam nisi ut eveniet facilis reprehenderit quos
+                        neque
+                        quae
+                        recusandae provident.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="row gx-0">
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1608336838021-57718556979d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1504579264001-833438f93df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1611477440608-4148806fe523?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%"
+                                    src="https://images.unsplash.com/photo-1511614617807-b46c9354bd18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1165&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe sed officia ab repudiandae
+                        recusandae consequuntur, earum nemo velit voluptatum quo dolore praesentium nostrum ut possimus
+                        voluptates totam omnis pariatur commodi sit iusto dolor cupiditate itaque sunt. Illum maxime
+                        similique fugiat ullam fuga voluptatibus ipsa quisquam, repellendus consequatur et, saepe
+                        deserunt.
+                        Necessitatibus enim impedit quidem distinctio quae? Maxime recusandae blanditiis, voluptates
+                        cupiditate id eaque quasi quos molestias modi mollitia accusantium a velit. Eos repellendus illo
+                        praesentium quia deserunt, architecto recusandae error numquam dolor illum necessitatibus vel
+                        porro
+                        ullam expedita possimus voluptates reprehenderit nesciunt quisquam quos debitis veritatis?
+                        Ipsum, ea
+                        eaque?
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="col-12 col-md-6 float-none float-md-end ms-0 ms-md-4">
+                            <figure style="aspect-ratio: 1 / 2; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1616902509409-a624c4f31a56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=566&q=80"
+                                    alt="">
+                            </figure>
+                            <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                        </div>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipisicing elit. Adipisci ipsum error odio autem mollitia natus ex
+                        facere
+                        excepturi eum dolorem, obcaecati cum sapiente quasi nesciunt eveniet! Delectus explicabo sint id
+                        cumque,
+                        quia repellendus rerum, nihil error vero non voluptatibus impedit esse nostrum? Ullam, fuga?
+                        Impedit
+                        nostrum
+                        quaerat excepturi quas error in ipsum natus suscipit totam esse earum adipisci fuga rerum
+                        dolorum,
+                        quis
+                        perspiciatis ducimus asperiores tenetur enim, atque temporibus animi magni saepe! Asperiores
+                        repellat,
+                        laudantium illo eos cum veniam quasi. Quasi aut maxime sed nostrum dolor! Neque quo quis odit
+                        sint
+                        eligendi.
+                        Eum eveniet asperiores, similique incidunt nisi dolorum magnam nobis quas sequi vel perferendis
+                        minus
+                        cumque. Sint rerum mollitia nulla debitis alias quasi, dolore sunt velit ut cupiditate cum
+                        magnam
+                        laudantium, dignissimos doloribus, modi quibusdam consectetur. Ea quisquam porro fugiat sed
+                        debitis
+                        laudantium temporibus rerum reiciendis sapiente sint quae provident voluptas necessitatibus
+                        omnis
+                        eos et
+                        incidunt molestiae corrupti ullam aliquid, velit dolorem suscipit. Sunt sint accusamus sit
+                        suscipit
+                        exercitationem, magnam maxime dignissimos quisquam numquam quaerat fugit, doloribus officia!
+                        Amet
+                        deserunt,
+                        saepe reprehenderit quam commodi ut nam, dignissimos ipsa blanditiis accusantium voluptatibus.
+                        Nulla
+                        repellendus est ea esse, doloremque fugit numquam nisi ut eveniet facilis reprehenderit quos
+                        neque
+                        quae
+                        recusandae provident.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="row gx-0">
+                            <figure class="col-12 col-sm-6 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1572814895138-9a1501883636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1546453159-9301aca09902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe sed officia ab repudiandae
+                        recusandae consequuntur, earum nemo velit voluptatum quo dolore praesentium nostrum ut possimus
+                        voluptates totam omnis pariatur commodi sit iusto dolor cupiditate itaque sunt. Illum maxime
+                        similique fugiat ullam fuga voluptatibus ipsa quisquam, repellendus consequatur et, saepe
+                        deserunt.
+                        Necessitatibus enim impedit quidem distinctio quae? Maxime recusandae blanditiis, voluptates
+                        cupiditate id eaque quasi quos molestias modi mollitia accusantium a velit. Eos repellendus illo
+                        praesentium quia deserunt, architecto recusandae error numquam dolor illum necessitatibus vel
+                        porro
+                        ullam expedita possimus voluptates reprehenderit nesciunt quisquam quos debitis veritatis?
+                        Ipsum, ea
+                        eaque?
+                    </p>
+                </div>
+
+                <div class="row mx-2 mx-md-4 w-100">
+                    <div class="col-12 col-md-6 py-4 border-bottom">
+                        <p class="fs-4 fw-bold text-decoration-underline my-3">AUTHOR</p>
+                        <div class="d-flex align-items-center">
+                            <figure class="m-0 rounded-circle"
+                                style="width: 144px; aspect-ratio: 1 / 1; overflow: hidden;">
+                                <img class="w-100"
+                                    src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t31.18172-8/210330_163856077004351_3078542_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJOSDB04-UzFzPNnwMTgHQuyZ7H0WHAr-7JnsfRYcCv9EFh0scVnD6qVrEAXY9bZQlumIj2Qr0ddycJFU7XbwZ&_nc_ohc=-GxPNzL2aU0AX_zLEYW&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfAtBvWybzNw8LOxMGoAqcwvBHW8GYa-RDOxYznaphxPnA&oe=64081548"
+                                    alt="">
+                            </figure>
+                            <div class="mx-4">
+                                <p class="fs-5 fw-bold m-0">Tanapon Wetsutthanon</p>
+                                <p class="fs-6 m-0">(Boon)</p>
+                                <p class="fs-6 m-0">ID 62010358</p>
+                                <p class="fs-6 fst-italic text-primary m-0 ">Feb 31, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 py-4 border-bottom">
+                        <p class="fs-4 fw-bold text-decoration-underline my-3">PHOTOGRAPHER</p>
+                        <div class="d-flex align-items-center">
+                            <figure class="m-0 rounded-circle"
+                                style="width: 144px; aspect-ratio: 1 / 1; overflow: hidden;">
+                                <img class="w-100"
+                                    src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t31.18172-8/210330_163856077004351_3078542_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJOSDB04-UzFzPNnwMTgHQuyZ7H0WHAr-7JnsfRYcCv9EFh0scVnD6qVrEAXY9bZQlumIj2Qr0ddycJFU7XbwZ&_nc_ohc=-GxPNzL2aU0AX_zLEYW&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfAtBvWybzNw8LOxMGoAqcwvBHW8GYa-RDOxYznaphxPnA&oe=64081548"
+                                    alt="">
+                            </figure>
+                            <div class="mx-4">
+                                <p class="fs-5 fw-bold m-0">Tanapon Wetsutthanon</p>
+                                <p class="fs-6 m-0">(Boon)</p>
+                                <p class="fs-6 m-0">ID 62010358</p>
+                                <p class="fs-6 fst-italic text-primary m-0 ">Feb 31, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#story1" class="text-decoration-none">
+                    <button type="button"
+                        class="btn btn-primary mx-auto my-5 d-flex justify-content-center rounded-pill">
+                        <span class="material-symbols-outlined me-2">
+                            arrow_upward
+                        </span>
+                        Back to top.
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div id="story3">
+            <header class="header-bg d-flex align-items-end"
+                style="background-image: url(https://images.unsplash.com/photo-1544181092-2ca1226466e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);">
+                <div class="title-bg w-100">
+                    <div class="container mx-auto text-light" style="max-width: 960px;">
+                        <p class="title fs-1">Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Suscipit, rem.</p>
+                        <hr>
+                        <p class="fw-bold text-primary">Category</p>
+                        <p class="fw-bold fst-italic">Feb 31, 2023</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container mt-4 mb-0 d-flex flex-column align-items-center" style="max-width: 960px;">
+                <div class="w-100">
+                    <div>
+                        <figure style="aspect-ratio: 16 / 9; overflow: hidden;">
+                            <img style="width: 100%;"
+                                src="https://images.unsplash.com/photo-1542672885-712ddc121c22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                                alt="">
+                        </figure>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolores rem quia ea et
+                        voluptatibus
+                        explicabo eos soluta alias in ipsam, harum sint corrupti sequi nostrum eligendi animi unde est
+                        cum
+                        labore odio blanditiis. Ut ab provident dolorum veniam corporis iusto hic explicabo numquam
+                        quidem,
+                        deserunt dolore quisquam? Dolores aperiam commodi repellendus molestiae dolore voluptatum,
+                        explicabo
+                        ullam accusamus facilis natus ducimus magnam ipsa deleniti voluptate odit quasi vero accusantium
+                        sint impedit laudantium. Voluptas numquam, eos laudantium harum veritatis tempore obcaecati
+                        adipisci
+                        officia, magni et itaque saepe, eum sint impedit odit deleniti ipsa! Delectus aperiam sunt aut
+                        asperiores repellat beatae perferendis?
+                    </p>
+
+                    <div class="d-flex flex-column align-items-end">
+                        <p class="quote-font fs-1 fw-bold fst-italic text-primary text-center">
+                            “Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolor!”
+                        </p>
+                        <p class="quote-font fs-4 fw-bold fst-italic text-primary text-center me-5">— Lorem, ipsum.</p>
+                    </div>
+
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime doloremque culpa, deserunt
+                        debitis
+                        excepturi recusandae similique rerum porro. Sapiente recusandae, exercitationem veritatis
+                        dolorem
+                        porro
+                        amet
+                        neque et consequuntur soluta ratione adipisci pariatur ex cum, magnam id, dicta libero? Earum
+                        soluta
+                        voluptas natus suscipit animi voluptatum iusto reiciendis odio qui obcaecati sint, optio
+                        temporibus
+                        minus
+                        nobis eos nihil magni eius veritatis molestiae iste doloribus recusandae! Voluptatum consequatur
+                        ex
+                        vero!
+                        Odit, quis dicta quam ab cumque saepe suscipit, quo quas ullam fugiat, libero porro ducimus enim
+                        doloribus
+                        tempore facilis eveniet. Nesciunt, minus beatae? Consequatur a error sit eaque hic dolorem
+                        eligendi
+                        amet.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="col-12 col-md-6 float-none float-md-start me-0 me-md-4">
+                            <figure style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1586768045025-f7cacc295831?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1013&q=80"
+                                    alt="">
+                            </figure>
+                            <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                        </div>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipisicing elit. Adipisci ipsum error odio autem mollitia natus ex
+                        facere
+                        excepturi eum dolorem, obcaecati cum sapiente quasi nesciunt eveniet! Delectus explicabo sint id
+                        cumque,
+                        quia repellendus rerum, nihil error vero non voluptatibus impedit esse nostrum? Ullam, fuga?
+                        Impedit
+                        nostrum
+                        quaerat excepturi quas error in ipsum natus suscipit totam esse earum adipisci fuga rerum
+                        dolorum,
+                        quis
+                        perspiciatis ducimus asperiores tenetur enim, atque temporibus animi magni saepe! Asperiores
+                        repellat,
+                        laudantium illo eos cum veniam quasi. Quasi aut maxime sed nostrum dolor! Neque quo quis odit
+                        sint
+                        eligendi.
+                        Eum eveniet asperiores, similique incidunt nisi dolorum magnam nobis quas sequi vel perferendis
+                        minus
+                        cumque. Sint rerum mollitia nulla debitis alias quasi, dolore sunt velit ut cupiditate cum
+                        magnam
+                        laudantium, dignissimos doloribus, modi quibusdam consectetur. Ea quisquam porro fugiat sed
+                        debitis
+                        laudantium temporibus rerum reiciendis sapiente sint quae provident voluptas necessitatibus
+                        omnis
+                        eos et
+                        incidunt molestiae corrupti ullam aliquid, velit dolorem suscipit. Sunt sint accusamus sit
+                        suscipit
+                        exercitationem, magnam maxime dignissimos quisquam numquam quaerat fugit, doloribus officia!
+                        Amet
+                        deserunt,
+                        saepe reprehenderit quam commodi ut nam, dignissimos ipsa blanditiis accusantium voluptatibus.
+                        Nulla
+                        repellendus est ea esse, doloremque fugit numquam nisi ut eveniet facilis reprehenderit quos
+                        neque
+                        quae
+                        recusandae provident.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="row gx-0">
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1608336838021-57718556979d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1504579264001-833438f93df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1611477440608-4148806fe523?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%"
+                                    src="https://images.unsplash.com/photo-1511614617807-b46c9354bd18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1165&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe sed officia ab repudiandae
+                        recusandae consequuntur, earum nemo velit voluptatum quo dolore praesentium nostrum ut possimus
+                        voluptates totam omnis pariatur commodi sit iusto dolor cupiditate itaque sunt. Illum maxime
+                        similique fugiat ullam fuga voluptatibus ipsa quisquam, repellendus consequatur et, saepe
+                        deserunt.
+                        Necessitatibus enim impedit quidem distinctio quae? Maxime recusandae blanditiis, voluptates
+                        cupiditate id eaque quasi quos molestias modi mollitia accusantium a velit. Eos repellendus illo
+                        praesentium quia deserunt, architecto recusandae error numquam dolor illum necessitatibus vel
+                        porro
+                        ullam expedita possimus voluptates reprehenderit nesciunt quisquam quos debitis veritatis?
+                        Ipsum, ea
+                        eaque?
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="col-12 col-md-6 float-none float-md-end ms-0 ms-md-4">
+                            <figure style="aspect-ratio: 1 / 2; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1616902509409-a624c4f31a56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=566&q=80"
+                                    alt="">
+                            </figure>
+                            <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                        </div>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipisicing elit. Adipisci ipsum error odio autem mollitia natus ex
+                        facere
+                        excepturi eum dolorem, obcaecati cum sapiente quasi nesciunt eveniet! Delectus explicabo sint id
+                        cumque,
+                        quia repellendus rerum, nihil error vero non voluptatibus impedit esse nostrum? Ullam, fuga?
+                        Impedit
+                        nostrum
+                        quaerat excepturi quas error in ipsum natus suscipit totam esse earum adipisci fuga rerum
+                        dolorum,
+                        quis
+                        perspiciatis ducimus asperiores tenetur enim, atque temporibus animi magni saepe! Asperiores
+                        repellat,
+                        laudantium illo eos cum veniam quasi. Quasi aut maxime sed nostrum dolor! Neque quo quis odit
+                        sint
+                        eligendi.
+                        Eum eveniet asperiores, similique incidunt nisi dolorum magnam nobis quas sequi vel perferendis
+                        minus
+                        cumque. Sint rerum mollitia nulla debitis alias quasi, dolore sunt velit ut cupiditate cum
+                        magnam
+                        laudantium, dignissimos doloribus, modi quibusdam consectetur. Ea quisquam porro fugiat sed
+                        debitis
+                        laudantium temporibus rerum reiciendis sapiente sint quae provident voluptas necessitatibus
+                        omnis
+                        eos et
+                        incidunt molestiae corrupti ullam aliquid, velit dolorem suscipit. Sunt sint accusamus sit
+                        suscipit
+                        exercitationem, magnam maxime dignissimos quisquam numquam quaerat fugit, doloribus officia!
+                        Amet
+                        deserunt,
+                        saepe reprehenderit quam commodi ut nam, dignissimos ipsa blanditiis accusantium voluptatibus.
+                        Nulla
+                        repellendus est ea esse, doloremque fugit numquam nisi ut eveniet facilis reprehenderit quos
+                        neque
+                        quae
+                        recusandae provident.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="row gx-0">
+                            <figure class="col-12 col-sm-6 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1572814895138-9a1501883636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1546453159-9301aca09902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe sed officia ab repudiandae
+                        recusandae consequuntur, earum nemo velit voluptatum quo dolore praesentium nostrum ut possimus
+                        voluptates totam omnis pariatur commodi sit iusto dolor cupiditate itaque sunt. Illum maxime
+                        similique fugiat ullam fuga voluptatibus ipsa quisquam, repellendus consequatur et, saepe
+                        deserunt.
+                        Necessitatibus enim impedit quidem distinctio quae? Maxime recusandae blanditiis, voluptates
+                        cupiditate id eaque quasi quos molestias modi mollitia accusantium a velit. Eos repellendus illo
+                        praesentium quia deserunt, architecto recusandae error numquam dolor illum necessitatibus vel
+                        porro
+                        ullam expedita possimus voluptates reprehenderit nesciunt quisquam quos debitis veritatis?
+                        Ipsum, ea
+                        eaque?
+                    </p>
+                </div>
+
+                <div class="row mx-2 mx-md-4 w-100">
+                    <div class="col-12 col-md-6 py-4 border-bottom">
+                        <p class="fs-4 fw-bold text-decoration-underline my-3">AUTHOR</p>
+                        <div class="d-flex align-items-center">
+                            <figure class="m-0 rounded-circle"
+                                style="width: 144px; aspect-ratio: 1 / 1; overflow: hidden;">
+                                <img class="w-100"
+                                    src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t31.18172-8/210330_163856077004351_3078542_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJOSDB04-UzFzPNnwMTgHQuyZ7H0WHAr-7JnsfRYcCv9EFh0scVnD6qVrEAXY9bZQlumIj2Qr0ddycJFU7XbwZ&_nc_ohc=-GxPNzL2aU0AX_zLEYW&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfAtBvWybzNw8LOxMGoAqcwvBHW8GYa-RDOxYznaphxPnA&oe=64081548"
+                                    alt="">
+                            </figure>
+                            <div class="mx-4">
+                                <p class="fs-5 fw-bold m-0">Tanapon Wetsutthanon</p>
+                                <p class="fs-6 m-0">(Boon)</p>
+                                <p class="fs-6 m-0">ID 62010358</p>
+                                <p class="fs-6 fst-italic text-primary m-0 ">Feb 31, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 py-4 border-bottom">
+                        <p class="fs-4 fw-bold text-decoration-underline my-3">PHOTOGRAPHER</p>
+                        <div class="d-flex align-items-center">
+                            <figure class="m-0 rounded-circle"
+                                style="width: 144px; aspect-ratio: 1 / 1; overflow: hidden;">
+                                <img class="w-100"
+                                    src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t31.18172-8/210330_163856077004351_3078542_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJOSDB04-UzFzPNnwMTgHQuyZ7H0WHAr-7JnsfRYcCv9EFh0scVnD6qVrEAXY9bZQlumIj2Qr0ddycJFU7XbwZ&_nc_ohc=-GxPNzL2aU0AX_zLEYW&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfAtBvWybzNw8LOxMGoAqcwvBHW8GYa-RDOxYznaphxPnA&oe=64081548"
+                                    alt="">
+                            </figure>
+                            <div class="mx-4">
+                                <p class="fs-5 fw-bold m-0">Tanapon Wetsutthanon</p>
+                                <p class="fs-6 m-0">(Boon)</p>
+                                <p class="fs-6 m-0">ID 62010358</p>
+                                <p class="fs-6 fst-italic text-primary m-0 ">Feb 31, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#story1" class="text-decoration-none">
+                    <button type="button"
+                        class="btn btn-primary mx-auto my-5 d-flex justify-content-center rounded-pill">
+                        <span class="material-symbols-outlined me-2">
+                            arrow_upward
+                        </span>
+                        Back to top.
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div id="story4">
+            <header class="header-bg d-flex align-items-end"
+                style="background-image: url(https://images.unsplash.com/photo-1544181092-2ca1226466e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);">
+                <div class="title-bg w-100">
+                    <div class="container mx-auto text-light" style="max-width: 960px;">
+                        <p class="title fs-1">Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Suscipit, rem.</p>
+                        <hr>
+                        <p class="fw-bold text-primary">Category</p>
+                        <p class="fw-bold fst-italic">Feb 31, 2023</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container mt-4 mb-0 d-flex flex-column align-items-center" style="max-width: 960px;">
+                <div class="w-100">
+                    <div>
+                        <figure style="aspect-ratio: 16 / 9; overflow: hidden;">
+                            <img style="width: 100%;"
+                                src="https://images.unsplash.com/photo-1542672885-712ddc121c22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                                alt="">
+                        </figure>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolores rem quia ea et
+                        voluptatibus
+                        explicabo eos soluta alias in ipsam, harum sint corrupti sequi nostrum eligendi animi unde est
+                        cum
+                        labore odio blanditiis. Ut ab provident dolorum veniam corporis iusto hic explicabo numquam
+                        quidem,
+                        deserunt dolore quisquam? Dolores aperiam commodi repellendus molestiae dolore voluptatum,
+                        explicabo
+                        ullam accusamus facilis natus ducimus magnam ipsa deleniti voluptate odit quasi vero accusantium
+                        sint impedit laudantium. Voluptas numquam, eos laudantium harum veritatis tempore obcaecati
+                        adipisci
+                        officia, magni et itaque saepe, eum sint impedit odit deleniti ipsa! Delectus aperiam sunt aut
+                        asperiores repellat beatae perferendis?
+                    </p>
+
+                    <div class="d-flex flex-column align-items-end">
+                        <p class="quote-font fs-1 fw-bold fst-italic text-primary text-center">
+                            “Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolor!”
+                        </p>
+                        <p class="quote-font fs-4 fw-bold fst-italic text-primary text-center me-5">— Lorem, ipsum.</p>
+                    </div>
+
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime doloremque culpa, deserunt
+                        debitis
+                        excepturi recusandae similique rerum porro. Sapiente recusandae, exercitationem veritatis
+                        dolorem
+                        porro
+                        amet
+                        neque et consequuntur soluta ratione adipisci pariatur ex cum, magnam id, dicta libero? Earum
+                        soluta
+                        voluptas natus suscipit animi voluptatum iusto reiciendis odio qui obcaecati sint, optio
+                        temporibus
+                        minus
+                        nobis eos nihil magni eius veritatis molestiae iste doloribus recusandae! Voluptatum consequatur
+                        ex
+                        vero!
+                        Odit, quis dicta quam ab cumque saepe suscipit, quo quas ullam fugiat, libero porro ducimus enim
+                        doloribus
+                        tempore facilis eveniet. Nesciunt, minus beatae? Consequatur a error sit eaque hic dolorem
+                        eligendi
+                        amet.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="col-12 col-md-6 float-none float-md-start me-0 me-md-4">
+                            <figure style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1586768045025-f7cacc295831?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1013&q=80"
+                                    alt="">
+                            </figure>
+                            <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                        </div>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipisicing elit. Adipisci ipsum error odio autem mollitia natus ex
+                        facere
+                        excepturi eum dolorem, obcaecati cum sapiente quasi nesciunt eveniet! Delectus explicabo sint id
+                        cumque,
+                        quia repellendus rerum, nihil error vero non voluptatibus impedit esse nostrum? Ullam, fuga?
+                        Impedit
+                        nostrum
+                        quaerat excepturi quas error in ipsum natus suscipit totam esse earum adipisci fuga rerum
+                        dolorum,
+                        quis
+                        perspiciatis ducimus asperiores tenetur enim, atque temporibus animi magni saepe! Asperiores
+                        repellat,
+                        laudantium illo eos cum veniam quasi. Quasi aut maxime sed nostrum dolor! Neque quo quis odit
+                        sint
+                        eligendi.
+                        Eum eveniet asperiores, similique incidunt nisi dolorum magnam nobis quas sequi vel perferendis
+                        minus
+                        cumque. Sint rerum mollitia nulla debitis alias quasi, dolore sunt velit ut cupiditate cum
+                        magnam
+                        laudantium, dignissimos doloribus, modi quibusdam consectetur. Ea quisquam porro fugiat sed
+                        debitis
+                        laudantium temporibus rerum reiciendis sapiente sint quae provident voluptas necessitatibus
+                        omnis
+                        eos et
+                        incidunt molestiae corrupti ullam aliquid, velit dolorem suscipit. Sunt sint accusamus sit
+                        suscipit
+                        exercitationem, magnam maxime dignissimos quisquam numquam quaerat fugit, doloribus officia!
+                        Amet
+                        deserunt,
+                        saepe reprehenderit quam commodi ut nam, dignissimos ipsa blanditiis accusantium voluptatibus.
+                        Nulla
+                        repellendus est ea esse, doloremque fugit numquam nisi ut eveniet facilis reprehenderit quos
+                        neque
+                        quae
+                        recusandae provident.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="row gx-0">
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1608336838021-57718556979d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1504579264001-833438f93df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1611477440608-4148806fe523?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%"
+                                    src="https://images.unsplash.com/photo-1511614617807-b46c9354bd18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1165&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe sed officia ab repudiandae
+                        recusandae consequuntur, earum nemo velit voluptatum quo dolore praesentium nostrum ut possimus
+                        voluptates totam omnis pariatur commodi sit iusto dolor cupiditate itaque sunt. Illum maxime
+                        similique fugiat ullam fuga voluptatibus ipsa quisquam, repellendus consequatur et, saepe
+                        deserunt.
+                        Necessitatibus enim impedit quidem distinctio quae? Maxime recusandae blanditiis, voluptates
+                        cupiditate id eaque quasi quos molestias modi mollitia accusantium a velit. Eos repellendus illo
+                        praesentium quia deserunt, architecto recusandae error numquam dolor illum necessitatibus vel
+                        porro
+                        ullam expedita possimus voluptates reprehenderit nesciunt quisquam quos debitis veritatis?
+                        Ipsum, ea
+                        eaque?
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="col-12 col-md-6 float-none float-md-end ms-0 ms-md-4">
+                            <figure style="aspect-ratio: 1 / 2; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1616902509409-a624c4f31a56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=566&q=80"
+                                    alt="">
+                            </figure>
+                            <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                        </div>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipisicing elit. Adipisci ipsum error odio autem mollitia natus ex
+                        facere
+                        excepturi eum dolorem, obcaecati cum sapiente quasi nesciunt eveniet! Delectus explicabo sint id
+                        cumque,
+                        quia repellendus rerum, nihil error vero non voluptatibus impedit esse nostrum? Ullam, fuga?
+                        Impedit
+                        nostrum
+                        quaerat excepturi quas error in ipsum natus suscipit totam esse earum adipisci fuga rerum
+                        dolorum,
+                        quis
+                        perspiciatis ducimus asperiores tenetur enim, atque temporibus animi magni saepe! Asperiores
+                        repellat,
+                        laudantium illo eos cum veniam quasi. Quasi aut maxime sed nostrum dolor! Neque quo quis odit
+                        sint
+                        eligendi.
+                        Eum eveniet asperiores, similique incidunt nisi dolorum magnam nobis quas sequi vel perferendis
+                        minus
+                        cumque. Sint rerum mollitia nulla debitis alias quasi, dolore sunt velit ut cupiditate cum
+                        magnam
+                        laudantium, dignissimos doloribus, modi quibusdam consectetur. Ea quisquam porro fugiat sed
+                        debitis
+                        laudantium temporibus rerum reiciendis sapiente sint quae provident voluptas necessitatibus
+                        omnis
+                        eos et
+                        incidunt molestiae corrupti ullam aliquid, velit dolorem suscipit. Sunt sint accusamus sit
+                        suscipit
+                        exercitationem, magnam maxime dignissimos quisquam numquam quaerat fugit, doloribus officia!
+                        Amet
+                        deserunt,
+                        saepe reprehenderit quam commodi ut nam, dignissimos ipsa blanditiis accusantium voluptatibus.
+                        Nulla
+                        repellendus est ea esse, doloremque fugit numquam nisi ut eveniet facilis reprehenderit quos
+                        neque
+                        quae
+                        recusandae provident.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="row gx-0">
+                            <figure class="col-12 col-sm-6 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1572814895138-9a1501883636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1546453159-9301aca09902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe sed officia ab repudiandae
+                        recusandae consequuntur, earum nemo velit voluptatum quo dolore praesentium nostrum ut possimus
+                        voluptates totam omnis pariatur commodi sit iusto dolor cupiditate itaque sunt. Illum maxime
+                        similique fugiat ullam fuga voluptatibus ipsa quisquam, repellendus consequatur et, saepe
+                        deserunt.
+                        Necessitatibus enim impedit quidem distinctio quae? Maxime recusandae blanditiis, voluptates
+                        cupiditate id eaque quasi quos molestias modi mollitia accusantium a velit. Eos repellendus illo
+                        praesentium quia deserunt, architecto recusandae error numquam dolor illum necessitatibus vel
+                        porro
+                        ullam expedita possimus voluptates reprehenderit nesciunt quisquam quos debitis veritatis?
+                        Ipsum, ea
+                        eaque?
+                    </p>
+                </div>
+
+                <div class="row mx-2 mx-md-4 w-100">
+                    <div class="col-12 col-md-6 py-4 border-bottom">
+                        <p class="fs-4 fw-bold text-decoration-underline my-3">AUTHOR</p>
+                        <div class="d-flex align-items-center">
+                            <figure class="m-0 rounded-circle"
+                                style="width: 144px; aspect-ratio: 1 / 1; overflow: hidden;">
+                                <img class="w-100"
+                                    src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t31.18172-8/210330_163856077004351_3078542_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJOSDB04-UzFzPNnwMTgHQuyZ7H0WHAr-7JnsfRYcCv9EFh0scVnD6qVrEAXY9bZQlumIj2Qr0ddycJFU7XbwZ&_nc_ohc=-GxPNzL2aU0AX_zLEYW&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfAtBvWybzNw8LOxMGoAqcwvBHW8GYa-RDOxYznaphxPnA&oe=64081548"
+                                    alt="">
+                            </figure>
+                            <div class="mx-4">
+                                <p class="fs-5 fw-bold m-0">Tanapon Wetsutthanon</p>
+                                <p class="fs-6 m-0">(Boon)</p>
+                                <p class="fs-6 m-0">ID 62010358</p>
+                                <p class="fs-6 fst-italic text-primary m-0 ">Feb 31, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 py-4 border-bottom">
+                        <p class="fs-4 fw-bold text-decoration-underline my-3">PHOTOGRAPHER</p>
+                        <div class="d-flex align-items-center">
+                            <figure class="m-0 rounded-circle"
+                                style="width: 144px; aspect-ratio: 1 / 1; overflow: hidden;">
+                                <img class="w-100"
+                                    src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t31.18172-8/210330_163856077004351_3078542_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJOSDB04-UzFzPNnwMTgHQuyZ7H0WHAr-7JnsfRYcCv9EFh0scVnD6qVrEAXY9bZQlumIj2Qr0ddycJFU7XbwZ&_nc_ohc=-GxPNzL2aU0AX_zLEYW&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfAtBvWybzNw8LOxMGoAqcwvBHW8GYa-RDOxYznaphxPnA&oe=64081548"
+                                    alt="">
+                            </figure>
+                            <div class="mx-4">
+                                <p class="fs-5 fw-bold m-0">Tanapon Wetsutthanon</p>
+                                <p class="fs-6 m-0">(Boon)</p>
+                                <p class="fs-6 m-0">ID 62010358</p>
+                                <p class="fs-6 fst-italic text-primary m-0 ">Feb 31, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#story1" class="text-decoration-none">
+                    <button type="button"
+                        class="btn btn-primary mx-auto my-5 d-flex justify-content-center rounded-pill">
+                        <span class="material-symbols-outlined me-2">
+                            arrow_upward
+                        </span>
+                        Back to top.
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div id="story5">
+            <header class="header-bg d-flex align-items-end"
+                style="background-image: url(https://images.unsplash.com/photo-1544181092-2ca1226466e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);">
+                <div class="title-bg w-100">
+                    <div class="container mx-auto text-light" style="max-width: 960px;">
+                        <p class="title fs-1">Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Suscipit, rem.</p>
+                        <hr>
+                        <p class="fw-bold text-primary">Category</p>
+                        <p class="fw-bold fst-italic">Feb 31, 2023</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container mt-4 mb-0 d-flex flex-column align-items-center" style="max-width: 960px;">
+                <div class="w-100">
+                    <div>
+                        <figure style="aspect-ratio: 16 / 9; overflow: hidden;">
+                            <img style="width: 100%;"
+                                src="https://images.unsplash.com/photo-1542672885-712ddc121c22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                                alt="">
+                        </figure>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolores rem quia ea et
+                        voluptatibus
+                        explicabo eos soluta alias in ipsam, harum sint corrupti sequi nostrum eligendi animi unde est
+                        cum
+                        labore odio blanditiis. Ut ab provident dolorum veniam corporis iusto hic explicabo numquam
+                        quidem,
+                        deserunt dolore quisquam? Dolores aperiam commodi repellendus molestiae dolore voluptatum,
+                        explicabo
+                        ullam accusamus facilis natus ducimus magnam ipsa deleniti voluptate odit quasi vero accusantium
+                        sint impedit laudantium. Voluptas numquam, eos laudantium harum veritatis tempore obcaecati
+                        adipisci
+                        officia, magni et itaque saepe, eum sint impedit odit deleniti ipsa! Delectus aperiam sunt aut
+                        asperiores repellat beatae perferendis?
+                    </p>
+
+                    <div class="d-flex flex-column align-items-end">
+                        <p class="quote-font fs-1 fw-bold fst-italic text-primary text-center">
+                            “Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolor!”
+                        </p>
+                        <p class="quote-font fs-4 fw-bold fst-italic text-primary text-center me-5">— Lorem, ipsum.</p>
+                    </div>
+
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime doloremque culpa, deserunt
+                        debitis
+                        excepturi recusandae similique rerum porro. Sapiente recusandae, exercitationem veritatis
+                        dolorem
+                        porro
+                        amet
+                        neque et consequuntur soluta ratione adipisci pariatur ex cum, magnam id, dicta libero? Earum
+                        soluta
+                        voluptas natus suscipit animi voluptatum iusto reiciendis odio qui obcaecati sint, optio
+                        temporibus
+                        minus
+                        nobis eos nihil magni eius veritatis molestiae iste doloribus recusandae! Voluptatum consequatur
+                        ex
+                        vero!
+                        Odit, quis dicta quam ab cumque saepe suscipit, quo quas ullam fugiat, libero porro ducimus enim
+                        doloribus
+                        tempore facilis eveniet. Nesciunt, minus beatae? Consequatur a error sit eaque hic dolorem
+                        eligendi
+                        amet.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="col-12 col-md-6 float-none float-md-start me-0 me-md-4">
+                            <figure style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1586768045025-f7cacc295831?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1013&q=80"
+                                    alt="">
+                            </figure>
+                            <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                        </div>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipisicing elit. Adipisci ipsum error odio autem mollitia natus ex
+                        facere
+                        excepturi eum dolorem, obcaecati cum sapiente quasi nesciunt eveniet! Delectus explicabo sint id
+                        cumque,
+                        quia repellendus rerum, nihil error vero non voluptatibus impedit esse nostrum? Ullam, fuga?
+                        Impedit
+                        nostrum
+                        quaerat excepturi quas error in ipsum natus suscipit totam esse earum adipisci fuga rerum
+                        dolorum,
+                        quis
+                        perspiciatis ducimus asperiores tenetur enim, atque temporibus animi magni saepe! Asperiores
+                        repellat,
+                        laudantium illo eos cum veniam quasi. Quasi aut maxime sed nostrum dolor! Neque quo quis odit
+                        sint
+                        eligendi.
+                        Eum eveniet asperiores, similique incidunt nisi dolorum magnam nobis quas sequi vel perferendis
+                        minus
+                        cumque. Sint rerum mollitia nulla debitis alias quasi, dolore sunt velit ut cupiditate cum
+                        magnam
+                        laudantium, dignissimos doloribus, modi quibusdam consectetur. Ea quisquam porro fugiat sed
+                        debitis
+                        laudantium temporibus rerum reiciendis sapiente sint quae provident voluptas necessitatibus
+                        omnis
+                        eos et
+                        incidunt molestiae corrupti ullam aliquid, velit dolorem suscipit. Sunt sint accusamus sit
+                        suscipit
+                        exercitationem, magnam maxime dignissimos quisquam numquam quaerat fugit, doloribus officia!
+                        Amet
+                        deserunt,
+                        saepe reprehenderit quam commodi ut nam, dignissimos ipsa blanditiis accusantium voluptatibus.
+                        Nulla
+                        repellendus est ea esse, doloremque fugit numquam nisi ut eveniet facilis reprehenderit quos
+                        neque
+                        quae
+                        recusandae provident.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="row gx-0">
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1608336838021-57718556979d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1504579264001-833438f93df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1611477440608-4148806fe523?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%"
+                                    src="https://images.unsplash.com/photo-1511614617807-b46c9354bd18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1165&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe sed officia ab repudiandae
+                        recusandae consequuntur, earum nemo velit voluptatum quo dolore praesentium nostrum ut possimus
+                        voluptates totam omnis pariatur commodi sit iusto dolor cupiditate itaque sunt. Illum maxime
+                        similique fugiat ullam fuga voluptatibus ipsa quisquam, repellendus consequatur et, saepe
+                        deserunt.
+                        Necessitatibus enim impedit quidem distinctio quae? Maxime recusandae blanditiis, voluptates
+                        cupiditate id eaque quasi quos molestias modi mollitia accusantium a velit. Eos repellendus illo
+                        praesentium quia deserunt, architecto recusandae error numquam dolor illum necessitatibus vel
+                        porro
+                        ullam expedita possimus voluptates reprehenderit nesciunt quisquam quos debitis veritatis?
+                        Ipsum, ea
+                        eaque?
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="col-12 col-md-6 float-none float-md-end ms-0 ms-md-4">
+                            <figure style="aspect-ratio: 1 / 2; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1616902509409-a624c4f31a56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=566&q=80"
+                                    alt="">
+                            </figure>
+                            <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                        </div>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipisicing elit. Adipisci ipsum error odio autem mollitia natus ex
+                        facere
+                        excepturi eum dolorem, obcaecati cum sapiente quasi nesciunt eveniet! Delectus explicabo sint id
+                        cumque,
+                        quia repellendus rerum, nihil error vero non voluptatibus impedit esse nostrum? Ullam, fuga?
+                        Impedit
+                        nostrum
+                        quaerat excepturi quas error in ipsum natus suscipit totam esse earum adipisci fuga rerum
+                        dolorum,
+                        quis
+                        perspiciatis ducimus asperiores tenetur enim, atque temporibus animi magni saepe! Asperiores
+                        repellat,
+                        laudantium illo eos cum veniam quasi. Quasi aut maxime sed nostrum dolor! Neque quo quis odit
+                        sint
+                        eligendi.
+                        Eum eveniet asperiores, similique incidunt nisi dolorum magnam nobis quas sequi vel perferendis
+                        minus
+                        cumque. Sint rerum mollitia nulla debitis alias quasi, dolore sunt velit ut cupiditate cum
+                        magnam
+                        laudantium, dignissimos doloribus, modi quibusdam consectetur. Ea quisquam porro fugiat sed
+                        debitis
+                        laudantium temporibus rerum reiciendis sapiente sint quae provident voluptas necessitatibus
+                        omnis
+                        eos et
+                        incidunt molestiae corrupti ullam aliquid, velit dolorem suscipit. Sunt sint accusamus sit
+                        suscipit
+                        exercitationem, magnam maxime dignissimos quisquam numquam quaerat fugit, doloribus officia!
+                        Amet
+                        deserunt,
+                        saepe reprehenderit quam commodi ut nam, dignissimos ipsa blanditiis accusantium voluptatibus.
+                        Nulla
+                        repellendus est ea esse, doloremque fugit numquam nisi ut eveniet facilis reprehenderit quos
+                        neque
+                        quae
+                        recusandae provident.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="row gx-0">
+                            <figure class="col-12 col-sm-6 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1572814895138-9a1501883636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1546453159-9301aca09902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe sed officia ab repudiandae
+                        recusandae consequuntur, earum nemo velit voluptatum quo dolore praesentium nostrum ut possimus
+                        voluptates totam omnis pariatur commodi sit iusto dolor cupiditate itaque sunt. Illum maxime
+                        similique fugiat ullam fuga voluptatibus ipsa quisquam, repellendus consequatur et, saepe
+                        deserunt.
+                        Necessitatibus enim impedit quidem distinctio quae? Maxime recusandae blanditiis, voluptates
+                        cupiditate id eaque quasi quos molestias modi mollitia accusantium a velit. Eos repellendus illo
+                        praesentium quia deserunt, architecto recusandae error numquam dolor illum necessitatibus vel
+                        porro
+                        ullam expedita possimus voluptates reprehenderit nesciunt quisquam quos debitis veritatis?
+                        Ipsum, ea
+                        eaque?
+                    </p>
+                </div>
+
+                <div class="row mx-2 mx-md-4 w-100">
+                    <div class="col-12 col-md-6 py-4 border-bottom">
+                        <p class="fs-4 fw-bold text-decoration-underline my-3">AUTHOR</p>
+                        <div class="d-flex align-items-center">
+                            <figure class="m-0 rounded-circle"
+                                style="width: 144px; aspect-ratio: 1 / 1; overflow: hidden;">
+                                <img class="w-100"
+                                    src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t31.18172-8/210330_163856077004351_3078542_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJOSDB04-UzFzPNnwMTgHQuyZ7H0WHAr-7JnsfRYcCv9EFh0scVnD6qVrEAXY9bZQlumIj2Qr0ddycJFU7XbwZ&_nc_ohc=-GxPNzL2aU0AX_zLEYW&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfAtBvWybzNw8LOxMGoAqcwvBHW8GYa-RDOxYznaphxPnA&oe=64081548"
+                                    alt="">
+                            </figure>
+                            <div class="mx-4">
+                                <p class="fs-5 fw-bold m-0">Tanapon Wetsutthanon</p>
+                                <p class="fs-6 m-0">(Boon)</p>
+                                <p class="fs-6 m-0">ID 62010358</p>
+                                <p class="fs-6 fst-italic text-primary m-0 ">Feb 31, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 py-4 border-bottom">
+                        <p class="fs-4 fw-bold text-decoration-underline my-3">PHOTOGRAPHER</p>
+                        <div class="d-flex align-items-center">
+                            <figure class="m-0 rounded-circle"
+                                style="width: 144px; aspect-ratio: 1 / 1; overflow: hidden;">
+                                <img class="w-100"
+                                    src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t31.18172-8/210330_163856077004351_3078542_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJOSDB04-UzFzPNnwMTgHQuyZ7H0WHAr-7JnsfRYcCv9EFh0scVnD6qVrEAXY9bZQlumIj2Qr0ddycJFU7XbwZ&_nc_ohc=-GxPNzL2aU0AX_zLEYW&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfAtBvWybzNw8LOxMGoAqcwvBHW8GYa-RDOxYznaphxPnA&oe=64081548"
+                                    alt="">
+                            </figure>
+                            <div class="mx-4">
+                                <p class="fs-5 fw-bold m-0">Tanapon Wetsutthanon</p>
+                                <p class="fs-6 m-0">(Boon)</p>
+                                <p class="fs-6 m-0">ID 62010358</p>
+                                <p class="fs-6 fst-italic text-primary m-0 ">Feb 31, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#story1" class="text-decoration-none">
+                    <button type="button"
+                        class="btn btn-primary mx-auto my-5 d-flex justify-content-center rounded-pill">
+                        <span class="material-symbols-outlined me-2">
+                            arrow_upward
+                        </span>
+                        Back to top.
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div id="story6">
+            <header class="header-bg d-flex align-items-end"
+                style="background-image: url(https://images.unsplash.com/photo-1544181092-2ca1226466e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);">
+                <div class="title-bg w-100">
+                    <div class="container mx-auto text-light" style="max-width: 960px;">
+                        <p class="title fs-1">Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Suscipit, rem.</p>
+                        <hr>
+                        <p class="fw-bold text-primary">Category</p>
+                        <p class="fw-bold fst-italic">Feb 31, 2023</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container mt-4 mb-0 d-flex flex-column align-items-center" style="max-width: 960px;">
+                <div class="w-100">
+                    <div>
+                        <figure style="aspect-ratio: 16 / 9; overflow: hidden;">
+                            <img style="width: 100%;"
+                                src="https://images.unsplash.com/photo-1542672885-712ddc121c22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                                alt="">
+                        </figure>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolores rem quia ea et
+                        voluptatibus
+                        explicabo eos soluta alias in ipsam, harum sint corrupti sequi nostrum eligendi animi unde est
+                        cum
+                        labore odio blanditiis. Ut ab provident dolorum veniam corporis iusto hic explicabo numquam
+                        quidem,
+                        deserunt dolore quisquam? Dolores aperiam commodi repellendus molestiae dolore voluptatum,
+                        explicabo
+                        ullam accusamus facilis natus ducimus magnam ipsa deleniti voluptate odit quasi vero accusantium
+                        sint impedit laudantium. Voluptas numquam, eos laudantium harum veritatis tempore obcaecati
+                        adipisci
+                        officia, magni et itaque saepe, eum sint impedit odit deleniti ipsa! Delectus aperiam sunt aut
+                        asperiores repellat beatae perferendis?
+                    </p>
+
+                    <div class="d-flex flex-column align-items-end">
+                        <p class="quote-font fs-1 fw-bold fst-italic text-primary text-center">
+                            “Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolor!”
+                        </p>
+                        <p class="quote-font fs-4 fw-bold fst-italic text-primary text-center me-5">— Lorem, ipsum.</p>
+                    </div>
+
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime doloremque culpa, deserunt
+                        debitis
+                        excepturi recusandae similique rerum porro. Sapiente recusandae, exercitationem veritatis
+                        dolorem
+                        porro
+                        amet
+                        neque et consequuntur soluta ratione adipisci pariatur ex cum, magnam id, dicta libero? Earum
+                        soluta
+                        voluptas natus suscipit animi voluptatum iusto reiciendis odio qui obcaecati sint, optio
+                        temporibus
+                        minus
+                        nobis eos nihil magni eius veritatis molestiae iste doloribus recusandae! Voluptatum consequatur
+                        ex
+                        vero!
+                        Odit, quis dicta quam ab cumque saepe suscipit, quo quas ullam fugiat, libero porro ducimus enim
+                        doloribus
+                        tempore facilis eveniet. Nesciunt, minus beatae? Consequatur a error sit eaque hic dolorem
+                        eligendi
+                        amet.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="col-12 col-md-6 float-none float-md-start me-0 me-md-4">
+                            <figure style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1586768045025-f7cacc295831?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1013&q=80"
+                                    alt="">
+                            </figure>
+                            <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                        </div>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipisicing elit. Adipisci ipsum error odio autem mollitia natus ex
+                        facere
+                        excepturi eum dolorem, obcaecati cum sapiente quasi nesciunt eveniet! Delectus explicabo sint id
+                        cumque,
+                        quia repellendus rerum, nihil error vero non voluptatibus impedit esse nostrum? Ullam, fuga?
+                        Impedit
+                        nostrum
+                        quaerat excepturi quas error in ipsum natus suscipit totam esse earum adipisci fuga rerum
+                        dolorum,
+                        quis
+                        perspiciatis ducimus asperiores tenetur enim, atque temporibus animi magni saepe! Asperiores
+                        repellat,
+                        laudantium illo eos cum veniam quasi. Quasi aut maxime sed nostrum dolor! Neque quo quis odit
+                        sint
+                        eligendi.
+                        Eum eveniet asperiores, similique incidunt nisi dolorum magnam nobis quas sequi vel perferendis
+                        minus
+                        cumque. Sint rerum mollitia nulla debitis alias quasi, dolore sunt velit ut cupiditate cum
+                        magnam
+                        laudantium, dignissimos doloribus, modi quibusdam consectetur. Ea quisquam porro fugiat sed
+                        debitis
+                        laudantium temporibus rerum reiciendis sapiente sint quae provident voluptas necessitatibus
+                        omnis
+                        eos et
+                        incidunt molestiae corrupti ullam aliquid, velit dolorem suscipit. Sunt sint accusamus sit
+                        suscipit
+                        exercitationem, magnam maxime dignissimos quisquam numquam quaerat fugit, doloribus officia!
+                        Amet
+                        deserunt,
+                        saepe reprehenderit quam commodi ut nam, dignissimos ipsa blanditiis accusantium voluptatibus.
+                        Nulla
+                        repellendus est ea esse, doloremque fugit numquam nisi ut eveniet facilis reprehenderit quos
+                        neque
+                        quae
+                        recusandae provident.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="row gx-0">
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1608336838021-57718556979d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1504579264001-833438f93df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1611477440608-4148806fe523?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%"
+                                    src="https://images.unsplash.com/photo-1511614617807-b46c9354bd18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1165&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe sed officia ab repudiandae
+                        recusandae consequuntur, earum nemo velit voluptatum quo dolore praesentium nostrum ut possimus
+                        voluptates totam omnis pariatur commodi sit iusto dolor cupiditate itaque sunt. Illum maxime
+                        similique fugiat ullam fuga voluptatibus ipsa quisquam, repellendus consequatur et, saepe
+                        deserunt.
+                        Necessitatibus enim impedit quidem distinctio quae? Maxime recusandae blanditiis, voluptates
+                        cupiditate id eaque quasi quos molestias modi mollitia accusantium a velit. Eos repellendus illo
+                        praesentium quia deserunt, architecto recusandae error numquam dolor illum necessitatibus vel
+                        porro
+                        ullam expedita possimus voluptates reprehenderit nesciunt quisquam quos debitis veritatis?
+                        Ipsum, ea
+                        eaque?
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="col-12 col-md-6 float-none float-md-end ms-0 ms-md-4">
+                            <figure style="aspect-ratio: 1 / 2; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1616902509409-a624c4f31a56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=566&q=80"
+                                    alt="">
+                            </figure>
+                            <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                        </div>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipisicing elit. Adipisci ipsum error odio autem mollitia natus ex
+                        facere
+                        excepturi eum dolorem, obcaecati cum sapiente quasi nesciunt eveniet! Delectus explicabo sint id
+                        cumque,
+                        quia repellendus rerum, nihil error vero non voluptatibus impedit esse nostrum? Ullam, fuga?
+                        Impedit
+                        nostrum
+                        quaerat excepturi quas error in ipsum natus suscipit totam esse earum adipisci fuga rerum
+                        dolorum,
+                        quis
+                        perspiciatis ducimus asperiores tenetur enim, atque temporibus animi magni saepe! Asperiores
+                        repellat,
+                        laudantium illo eos cum veniam quasi. Quasi aut maxime sed nostrum dolor! Neque quo quis odit
+                        sint
+                        eligendi.
+                        Eum eveniet asperiores, similique incidunt nisi dolorum magnam nobis quas sequi vel perferendis
+                        minus
+                        cumque. Sint rerum mollitia nulla debitis alias quasi, dolore sunt velit ut cupiditate cum
+                        magnam
+                        laudantium, dignissimos doloribus, modi quibusdam consectetur. Ea quisquam porro fugiat sed
+                        debitis
+                        laudantium temporibus rerum reiciendis sapiente sint quae provident voluptas necessitatibus
+                        omnis
+                        eos et
+                        incidunt molestiae corrupti ullam aliquid, velit dolorem suscipit. Sunt sint accusamus sit
+                        suscipit
+                        exercitationem, magnam maxime dignissimos quisquam numquam quaerat fugit, doloribus officia!
+                        Amet
+                        deserunt,
+                        saepe reprehenderit quam commodi ut nam, dignissimos ipsa blanditiis accusantium voluptatibus.
+                        Nulla
+                        repellendus est ea esse, doloremque fugit numquam nisi ut eveniet facilis reprehenderit quos
+                        neque
+                        quae
+                        recusandae provident.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="row gx-0">
+                            <figure class="col-12 col-sm-6 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1572814895138-9a1501883636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1546453159-9301aca09902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe sed officia ab repudiandae
+                        recusandae consequuntur, earum nemo velit voluptatum quo dolore praesentium nostrum ut possimus
+                        voluptates totam omnis pariatur commodi sit iusto dolor cupiditate itaque sunt. Illum maxime
+                        similique fugiat ullam fuga voluptatibus ipsa quisquam, repellendus consequatur et, saepe
+                        deserunt.
+                        Necessitatibus enim impedit quidem distinctio quae? Maxime recusandae blanditiis, voluptates
+                        cupiditate id eaque quasi quos molestias modi mollitia accusantium a velit. Eos repellendus illo
+                        praesentium quia deserunt, architecto recusandae error numquam dolor illum necessitatibus vel
+                        porro
+                        ullam expedita possimus voluptates reprehenderit nesciunt quisquam quos debitis veritatis?
+                        Ipsum, ea
+                        eaque?
+                    </p>
+                </div>
+
+                <div class="row mx-2 mx-md-4 w-100">
+                    <div class="col-12 col-md-6 py-4 border-bottom">
+                        <p class="fs-4 fw-bold text-decoration-underline my-3">AUTHOR</p>
+                        <div class="d-flex align-items-center">
+                            <figure class="m-0 rounded-circle"
+                                style="width: 144px; aspect-ratio: 1 / 1; overflow: hidden;">
+                                <img class="w-100"
+                                    src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t31.18172-8/210330_163856077004351_3078542_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJOSDB04-UzFzPNnwMTgHQuyZ7H0WHAr-7JnsfRYcCv9EFh0scVnD6qVrEAXY9bZQlumIj2Qr0ddycJFU7XbwZ&_nc_ohc=-GxPNzL2aU0AX_zLEYW&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfAtBvWybzNw8LOxMGoAqcwvBHW8GYa-RDOxYznaphxPnA&oe=64081548"
+                                    alt="">
+                            </figure>
+                            <div class="mx-4">
+                                <p class="fs-5 fw-bold m-0">Tanapon Wetsutthanon</p>
+                                <p class="fs-6 m-0">(Boon)</p>
+                                <p class="fs-6 m-0">ID 62010358</p>
+                                <p class="fs-6 fst-italic text-primary m-0 ">Feb 31, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 py-4 border-bottom">
+                        <p class="fs-4 fw-bold text-decoration-underline my-3">PHOTOGRAPHER</p>
+                        <div class="d-flex align-items-center">
+                            <figure class="m-0 rounded-circle"
+                                style="width: 144px; aspect-ratio: 1 / 1; overflow: hidden;">
+                                <img class="w-100"
+                                    src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t31.18172-8/210330_163856077004351_3078542_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJOSDB04-UzFzPNnwMTgHQuyZ7H0WHAr-7JnsfRYcCv9EFh0scVnD6qVrEAXY9bZQlumIj2Qr0ddycJFU7XbwZ&_nc_ohc=-GxPNzL2aU0AX_zLEYW&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfAtBvWybzNw8LOxMGoAqcwvBHW8GYa-RDOxYznaphxPnA&oe=64081548"
+                                    alt="">
+                            </figure>
+                            <div class="mx-4">
+                                <p class="fs-5 fw-bold m-0">Tanapon Wetsutthanon</p>
+                                <p class="fs-6 m-0">(Boon)</p>
+                                <p class="fs-6 m-0">ID 62010358</p>
+                                <p class="fs-6 fst-italic text-primary m-0 ">Feb 31, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#story1" class="text-decoration-none">
+                    <button type="button"
+                        class="btn btn-primary mx-auto my-5 d-flex justify-content-center rounded-pill">
+                        <span class="material-symbols-outlined me-2">
+                            arrow_upward
+                        </span>
+                        Back to top.
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div id="story7">
+            <header class="header-bg d-flex align-items-end"
+                style="background-image: url(https://images.unsplash.com/photo-1544181092-2ca1226466e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);">
+                <div class="title-bg w-100">
+                    <div class="container mx-auto text-light" style="max-width: 960px;">
+                        <p class="title fs-1">Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Suscipit, rem.</p>
+                        <hr>
+                        <p class="fw-bold text-primary">Category</p>
+                        <p class="fw-bold fst-italic">Feb 31, 2023</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container mt-4 mb-0 d-flex flex-column align-items-center" style="max-width: 960px;">
+                <div class="w-100">
+                    <div>
+                        <figure style="aspect-ratio: 16 / 9; overflow: hidden;">
+                            <img style="width: 100%;"
+                                src="https://images.unsplash.com/photo-1542672885-712ddc121c22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                                alt="">
+                        </figure>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolores rem quia ea et
+                        voluptatibus
+                        explicabo eos soluta alias in ipsam, harum sint corrupti sequi nostrum eligendi animi unde est
+                        cum
+                        labore odio blanditiis. Ut ab provident dolorum veniam corporis iusto hic explicabo numquam
+                        quidem,
+                        deserunt dolore quisquam? Dolores aperiam commodi repellendus molestiae dolore voluptatum,
+                        explicabo
+                        ullam accusamus facilis natus ducimus magnam ipsa deleniti voluptate odit quasi vero accusantium
+                        sint impedit laudantium. Voluptas numquam, eos laudantium harum veritatis tempore obcaecati
+                        adipisci
+                        officia, magni et itaque saepe, eum sint impedit odit deleniti ipsa! Delectus aperiam sunt aut
+                        asperiores repellat beatae perferendis?
+                    </p>
+
+                    <div class="d-flex flex-column align-items-end">
+                        <p class="quote-font fs-1 fw-bold fst-italic text-primary text-center">
+                            “Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolor!”
+                        </p>
+                        <p class="quote-font fs-4 fw-bold fst-italic text-primary text-center me-5">— Lorem, ipsum.</p>
+                    </div>
+
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime doloremque culpa, deserunt
+                        debitis
+                        excepturi recusandae similique rerum porro. Sapiente recusandae, exercitationem veritatis
+                        dolorem
+                        porro
+                        amet
+                        neque et consequuntur soluta ratione adipisci pariatur ex cum, magnam id, dicta libero? Earum
+                        soluta
+                        voluptas natus suscipit animi voluptatum iusto reiciendis odio qui obcaecati sint, optio
+                        temporibus
+                        minus
+                        nobis eos nihil magni eius veritatis molestiae iste doloribus recusandae! Voluptatum consequatur
+                        ex
+                        vero!
+                        Odit, quis dicta quam ab cumque saepe suscipit, quo quas ullam fugiat, libero porro ducimus enim
+                        doloribus
+                        tempore facilis eveniet. Nesciunt, minus beatae? Consequatur a error sit eaque hic dolorem
+                        eligendi
+                        amet.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="col-12 col-md-6 float-none float-md-start me-0 me-md-4">
+                            <figure style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1586768045025-f7cacc295831?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1013&q=80"
+                                    alt="">
+                            </figure>
+                            <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                        </div>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipisicing elit. Adipisci ipsum error odio autem mollitia natus ex
+                        facere
+                        excepturi eum dolorem, obcaecati cum sapiente quasi nesciunt eveniet! Delectus explicabo sint id
+                        cumque,
+                        quia repellendus rerum, nihil error vero non voluptatibus impedit esse nostrum? Ullam, fuga?
+                        Impedit
+                        nostrum
+                        quaerat excepturi quas error in ipsum natus suscipit totam esse earum adipisci fuga rerum
+                        dolorum,
+                        quis
+                        perspiciatis ducimus asperiores tenetur enim, atque temporibus animi magni saepe! Asperiores
+                        repellat,
+                        laudantium illo eos cum veniam quasi. Quasi aut maxime sed nostrum dolor! Neque quo quis odit
+                        sint
+                        eligendi.
+                        Eum eveniet asperiores, similique incidunt nisi dolorum magnam nobis quas sequi vel perferendis
+                        minus
+                        cumque. Sint rerum mollitia nulla debitis alias quasi, dolore sunt velit ut cupiditate cum
+                        magnam
+                        laudantium, dignissimos doloribus, modi quibusdam consectetur. Ea quisquam porro fugiat sed
+                        debitis
+                        laudantium temporibus rerum reiciendis sapiente sint quae provident voluptas necessitatibus
+                        omnis
+                        eos et
+                        incidunt molestiae corrupti ullam aliquid, velit dolorem suscipit. Sunt sint accusamus sit
+                        suscipit
+                        exercitationem, magnam maxime dignissimos quisquam numquam quaerat fugit, doloribus officia!
+                        Amet
+                        deserunt,
+                        saepe reprehenderit quam commodi ut nam, dignissimos ipsa blanditiis accusantium voluptatibus.
+                        Nulla
+                        repellendus est ea esse, doloremque fugit numquam nisi ut eveniet facilis reprehenderit quos
+                        neque
+                        quae
+                        recusandae provident.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="row gx-0">
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1608336838021-57718556979d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1504579264001-833438f93df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1611477440608-4148806fe523?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 col-md-3 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%"
+                                    src="https://images.unsplash.com/photo-1511614617807-b46c9354bd18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1165&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe sed officia ab repudiandae
+                        recusandae consequuntur, earum nemo velit voluptatum quo dolore praesentium nostrum ut possimus
+                        voluptates totam omnis pariatur commodi sit iusto dolor cupiditate itaque sunt. Illum maxime
+                        similique fugiat ullam fuga voluptatibus ipsa quisquam, repellendus consequatur et, saepe
+                        deserunt.
+                        Necessitatibus enim impedit quidem distinctio quae? Maxime recusandae blanditiis, voluptates
+                        cupiditate id eaque quasi quos molestias modi mollitia accusantium a velit. Eos repellendus illo
+                        praesentium quia deserunt, architecto recusandae error numquam dolor illum necessitatibus vel
+                        porro
+                        ullam expedita possimus voluptates reprehenderit nesciunt quisquam quos debitis veritatis?
+                        Ipsum, ea
+                        eaque?
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="col-12 col-md-6 float-none float-md-end ms-0 ms-md-4">
+                            <figure style="aspect-ratio: 1 / 2; overflow: hidden;">
+                                <img style="width: 100%;"
+                                    src="https://images.unsplash.com/photo-1616902509409-a624c4f31a56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=566&q=80"
+                                    alt="">
+                            </figure>
+                            <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                        </div>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipisicing elit. Adipisci ipsum error odio autem mollitia natus ex
+                        facere
+                        excepturi eum dolorem, obcaecati cum sapiente quasi nesciunt eveniet! Delectus explicabo sint id
+                        cumque,
+                        quia repellendus rerum, nihil error vero non voluptatibus impedit esse nostrum? Ullam, fuga?
+                        Impedit
+                        nostrum
+                        quaerat excepturi quas error in ipsum natus suscipit totam esse earum adipisci fuga rerum
+                        dolorum,
+                        quis
+                        perspiciatis ducimus asperiores tenetur enim, atque temporibus animi magni saepe! Asperiores
+                        repellat,
+                        laudantium illo eos cum veniam quasi. Quasi aut maxime sed nostrum dolor! Neque quo quis odit
+                        sint
+                        eligendi.
+                        Eum eveniet asperiores, similique incidunt nisi dolorum magnam nobis quas sequi vel perferendis
+                        minus
+                        cumque. Sint rerum mollitia nulla debitis alias quasi, dolore sunt velit ut cupiditate cum
+                        magnam
+                        laudantium, dignissimos doloribus, modi quibusdam consectetur. Ea quisquam porro fugiat sed
+                        debitis
+                        laudantium temporibus rerum reiciendis sapiente sint quae provident voluptas necessitatibus
+                        omnis
+                        eos et
+                        incidunt molestiae corrupti ullam aliquid, velit dolorem suscipit. Sunt sint accusamus sit
+                        suscipit
+                        exercitationem, magnam maxime dignissimos quisquam numquam quaerat fugit, doloribus officia!
+                        Amet
+                        deserunt,
+                        saepe reprehenderit quam commodi ut nam, dignissimos ipsa blanditiis accusantium voluptatibus.
+                        Nulla
+                        repellendus est ea esse, doloremque fugit numquam nisi ut eveniet facilis reprehenderit quos
+                        neque
+                        quae
+                        recusandae provident.
+                    </p>
+                </div>
+
+                <div class="clearfix w-100">
+                    <div>
+                        <div class="row gx-0">
+                            <figure class="col-12 col-sm-6 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1572814895138-9a1501883636?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </figure>
+                            <figure class="col-12 col-sm-6 bg-primary p-0"
+                                style="aspect-ratio: 4 / 3; overflow: hidden;">
+                                <img style="height: 100%;"
+                                    src="https://images.unsplash.com/photo-1546453159-9301aca09902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <figcaption class="text-center text-secondary fst-italic">unsplash.com</figcaption>
+                    </div>
+                    <p class="paragraph p-2 p-md-4 lh-lg">
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe sed officia ab repudiandae
+                        recusandae consequuntur, earum nemo velit voluptatum quo dolore praesentium nostrum ut possimus
+                        voluptates totam omnis pariatur commodi sit iusto dolor cupiditate itaque sunt. Illum maxime
+                        similique fugiat ullam fuga voluptatibus ipsa quisquam, repellendus consequatur et, saepe
+                        deserunt.
+                        Necessitatibus enim impedit quidem distinctio quae? Maxime recusandae blanditiis, voluptates
+                        cupiditate id eaque quasi quos molestias modi mollitia accusantium a velit. Eos repellendus illo
+                        praesentium quia deserunt, architecto recusandae error numquam dolor illum necessitatibus vel
+                        porro
+                        ullam expedita possimus voluptates reprehenderit nesciunt quisquam quos debitis veritatis?
+                        Ipsum, ea
+                        eaque?
+                    </p>
+                </div>
+
+                <div class="row mx-2 mx-md-4 w-100">
+                    <div class="col-12 col-md-6 py-4 border-bottom">
+                        <p class="fs-4 fw-bold text-decoration-underline my-3">AUTHOR</p>
+                        <div class="d-flex align-items-center">
+                            <figure class="m-0 rounded-circle"
+                                style="width: 144px; aspect-ratio: 1 / 1; overflow: hidden;">
+                                <img class="w-100"
+                                    src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t31.18172-8/210330_163856077004351_3078542_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJOSDB04-UzFzPNnwMTgHQuyZ7H0WHAr-7JnsfRYcCv9EFh0scVnD6qVrEAXY9bZQlumIj2Qr0ddycJFU7XbwZ&_nc_ohc=-GxPNzL2aU0AX_zLEYW&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfAtBvWybzNw8LOxMGoAqcwvBHW8GYa-RDOxYznaphxPnA&oe=64081548"
+                                    alt="">
+                            </figure>
+                            <div class="mx-4">
+                                <p class="fs-5 fw-bold m-0">Tanapon Wetsutthanon</p>
+                                <p class="fs-6 m-0">(Boon)</p>
+                                <p class="fs-6 m-0">ID 62010358</p>
+                                <p class="fs-6 fst-italic text-primary m-0 ">Feb 31, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 py-4 border-bottom">
+                        <p class="fs-4 fw-bold text-decoration-underline my-3">PHOTOGRAPHER</p>
+                        <div class="d-flex align-items-center">
+                            <figure class="m-0 rounded-circle"
+                                style="width: 144px; aspect-ratio: 1 / 1; overflow: hidden;">
+                                <img class="w-100"
+                                    src="https://scontent.fbkk29-4.fna.fbcdn.net/v/t31.18172-8/210330_163856077004351_3078542_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHJOSDB04-UzFzPNnwMTgHQuyZ7H0WHAr-7JnsfRYcCv9EFh0scVnD6qVrEAXY9bZQlumIj2Qr0ddycJFU7XbwZ&_nc_ohc=-GxPNzL2aU0AX_zLEYW&_nc_ht=scontent.fbkk29-4.fna&oh=00_AfAtBvWybzNw8LOxMGoAqcwvBHW8GYa-RDOxYznaphxPnA&oe=64081548"
+                                    alt="">
+                            </figure>
+                            <div class="mx-4">
+                                <p class="fs-5 fw-bold m-0">Tanapon Wetsutthanon</p>
+                                <p class="fs-6 m-0">(Boon)</p>
+                                <p class="fs-6 m-0">ID 62010358</p>
+                                <p class="fs-6 fst-italic text-primary m-0 ">Feb 31, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#story1" class="text-decoration-none">
+                    <button type="button"
+                        class="btn btn-primary mx-auto my-5 d-flex justify-content-center rounded-pill">
+                        <span class="material-symbols-outlined me-2">
+                            arrow_upward
+                        </span>
+                        Back to top.
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-5 border-top">
+        <div class="container">
+            <p class="fw-bold text-center mb-0">One MAGAZINE</p>
+            <p class="text-center mb-0">Words by Tanapon W.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
