@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="maincontainer"></div>
+        <script>
+        // Element Functions
+        function titleText() {
+            let div = document.createElement('div')
+            let h = document.createElement('h2')
+            let text = document.createTextNode('Exercise 04: JavaScript&DOM')
+            h.appendChild(text)
+            div.appendChild(h)
+            return div
+        }
+
+        function displayDate() {
+            let div = document.createElement('div')
+            div.style.marginBottom = '2rem'
+            div.style.display = 'flex'
+            div.style.flexDirection = 'column'
+            div.style.height = '21px'
+
+            let button = document.createElement('button')
+            button.appendChild(document.createTextNode('Click me to display Date and Time'))
+            button.type = 'button'
+            button.style.width = 'max-content'
+
+            let dateCon = document.createElement('time')
+            dateCon.style.padding = '0 6px'
+            dateCon.style.border = '3px solid black'
+            dateCon.style.width = 'max-content'
+            dateCon.style.height = 'max-content'
+            dateCon.style.position = 'fixed'
+            dateCon.style.top = '0px'
+            dateCon.style.right = '0px'
+            dateCon.style.display = 'none'
+
+            let w
+            let i = 0
+
+            function startWorker() {
+                if (typeof (Worker) !== "undefined") {
+                    if (typeof (w) == "undefined") {
+                        w = new Worker("62010358.js")
+                    }
+                    w.postMessage({
+                        index: i,
+                    })
+                    w.onmessage = function (event) {
+                        dateCon.textContent = event.data.dateString
+                        dateCon.style.backgroundColor = event.data.colorBG
+                        dateCon.style.color = event.data.colorText
+                        i = (event.data.index + 1) % 6
+                    }
+                } else {
+                    alert('Sorry! No Web Worker support.')
+                }
+            }
+
+            function stopWorker() {
+                w.terminate()
+                w = undefined
+            }
+
+            button.addEventListener('click', clickButton)
+            function clickButton() {
+                dateCon.style.display = 'inline'
+                button.style.opacity = '0'
+                startWorker()
+            }
+
+            dateCon.addEventListener('click', clickDateCon)
+            function clickDateCon() {
+                if (dateCon.style.top === '0px') {
+                    button.style.display = 'none'
+                    dateCon.style.position = ''
+                    dateCon.style.top = ''
+                    dateCon.style.right = ''
+                    stopWorker()
+                } else {
+                    button.style.display = 'inline'
+                    dateCon.style.position = 'fixed'
+                    dateCon.style.top = '0px'
+                    dateCon.style.right = '0px'
+                    startWorker()
+                }
+            }
+
+            div.appendChild(button)
+            div.appendChild(dateCon)
+            return div
+        }
+
+        function personalInfo() {
+            let div = document.createElement('div')
+
+            let a = document.createElement('a')
+            a.href = 'javascript:;'
+            a.style.color = 'violet'
+            a.style.backgroundColor = ''
+            a.addEventListener('mouseover', mouseOver)
+            a.addEventListener('mouseout', mouseOut)
+            a.addEventListener('click', clickFunc)
+            function mouseOver() {
+                a.style.color = 'blue'
+                a.style.backgroundColor = 'yellow'
+            }
+            function mouseOut() {
+                a.style.color = 'violet'
+                a.style.backgroundColor = ''
+            }
+            function clickFunc() {
+                if (ul.style.display === 'none') {
+                    ul.style.display = 'block'
+                } else {
+                    ul.style.display = 'none'
+                }
+            }
+
+            let text = document.createTextNode('Personal Info')
+
+            let ul = document.createElement('ul')
+            let firstLi = document.createElement('li')
+            let secondLi = document.createElement('li')
+            let thirdLi = document.createElement('li')
+            let name = document.createTextNode('Tanapon Wetsutthanon, ID: 62010358')
+            let subject = document.createTextNode('Subject: SOFTWARE STUDIO')
+            let semester = document.createTextNode('Semester: 2/2565')
+            firstLi.appendChild(name)
+            secondLi.appendChild(subject)
+            thirdLi.appendChild(semester)
+            ul.appendChild(firstLi)
+            ul.appendChild(secondLi)
+            ul.appendChild(thirdLi)
+            ul.style.display = 'none'
+
+            a.appendChild(text)
+            div.appendChild(a)
+            div.appendChild(ul)
+            return div
+        }
+
+        function snapshots() {
+            let div = document.createElement('div')
+            let h = document.createElement('h1')
+            let text = document.createTextNode('Snapshots')
+
+            let ul = document.createElement('ul')
+            let firstLi = document.createElement('li')
+            let secondLi = document.createElement('li')
+            let thirdLi = document.createElement('li')
+            let fourthLi = document.createElement('li')
+            let firstA = document.createElement('a')
+            let secondA = document.createElement('a')
+            let thirdA = document.createElement('a')
+            let fourthA = document.createElement('a')
+            firstA.href = 'javascript:;'
+            secondA.href = 'javascript:;'
+            thirdA.href = 'javascript:;'
+            fourthA.href = 'javascript:;'
+            firstLi.appendChild(firstA)
+            secondLi.appendChild(secondA)
+            thirdLi.appendChild(thirdA)
+            fourthLi.appendChild(fourthA)
+            firstA.appendChild(document.createTextNode('Fireworks'))
+            secondA.appendChild(document.createTextNode('Crest'))
+            thirdA.appendChild(document.createTextNode('Action'))
+            fourthA.appendChild(document.createTextNode('Buffalo'))
+            ul.appendChild(firstLi)
+            ul.appendChild(secondLi)
+            ul.appendChild(thirdLi)
+            ul.appendChild(fourthLi)
+
+            let figure = document.createElement('div')
+            figure.style.width = '600px'
+            figure.style.height = 'max-content'
+            let img = document.createElement('img')
+            img.style.width = '100%'
+            img.src = 'https://scontent.fbkk5-5.fna.fbcdn.net/v/t39.30808-6/297283850_5367962686597930_4237137743468903702_n.png?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeGDjLffI3G90ZTT-dQeKaDCTr2Cz0bn89ROvYLPRufz1DEe47piFZdtZ-FLSKGTXhdH7VSPkbbSGU6AiDMrFSos&_nc_ohc=3kJvJVqB1jkAX9ogKnH&_nc_ht=scontent.fbkk5-5.fna&oh=00_AfCK_pQEKSO1xZgPOl11i59fR7YqF0UVF6P1AfHCZoTvgg&oe=63F47E5E'
+            figure.append(img)
+
+            firstA.addEventListener('click', () => { changeImage('https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80') })
+            secondA.addEventListener('click', () => { changeImage('https://images.unsplash.com/photo-1515655371474-253e8d8a575a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80') })
+            thirdA.addEventListener('click', () => { changeImage('https://www.cheatsheet.com/wp-content/uploads/2022/05/Top-Gun_-Maverick-Tom-Cruise-as-Maverick-on-the-set.jpg') })
+            fourthA.addEventListener('click', () => { changeImage('https://images.unsplash.com/photo-1575414914265-ebc9aa2637f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80') })
+
+            function changeImage(url) {
+                img.src = url
+            }
+
+            h.appendChild(text)
+            div.appendChild(h)
+            div.appendChild(ul)
+            div.appendChild(figure)
+            return div
+        }
+
+        // Create Elements
+        let title = titleText()
+        let date = displayDate()
+        let personal = personalInfo()
+        let snap = snapshots()
+
+        // Adding Elements to maincontainer
+        let main = document.getElementById('maincontainer')
+        main.appendChild(title)
+        main.appendChild(date)
+        main.appendChild(personal)
+        main.appendChild(snap)
+        </script>
+    </body>
+</html>
