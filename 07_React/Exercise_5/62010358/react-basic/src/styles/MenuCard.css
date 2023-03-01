@@ -1,0 +1,45 @@
+.menu-card {
+    max-width: 960px;
+    background-color: blanchedalmond;
+    border: 3px solid black;
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+}
+
+.menu-card .info-con {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.menu-card .text-con {
+    width: 70%;
+}
+
+.menu-card .food-type {
+    margin: 1.5rem 0;
+}
+
+.menu-card .food-name {
+    margin-bottom: 1.5rem;
+}
+
+.menu-card .food-desc {
+    font-size: 1rem;
+}
+
+.menu-card .img-con {
+    width: 30%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.menu-card .img-con img {
+    width: 100%;
+    padding: 0 0.5rem;
+}
+
+.menu-card .vote-score {
+    display: flex;
+    justify-content: center;
+}
